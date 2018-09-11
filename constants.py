@@ -30,6 +30,9 @@ clight = 2.998e10
 
 ## THERMODYNAMIC
 kb     = 1.381e-16
-sigmab = 5.670e-5
 avogn  = 6.022e23
 gasr   = 8.314e7
+
+## RADIATION
+arad   = 7.56e-15
+sigmab = 5.670e-5

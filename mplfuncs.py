@@ -1,3 +1,4 @@
+import numpy as np
 from matplotlib.ticker import MaxNLocator
 
 def ax_prune(ax,xy,which):
@@ -23,15 +24,17 @@ def prune_y(ax,which):
 
 def resize(fig,axarr):
   nr,nc = np.atleast_2d(axarr).shape
-  Y = np.array([5,9,12,14,15])
-  X = 9.0*Y[nc]/5.0
+  nr = nr-1
+  nc = nc-1
+  Y = np.array([6,11,15,18,20,21])
+  X = 9.0*Y[nc]/6.0
   Y = Y[nr]
   fig.set_size_inches(X,Y)
-  for ax in axarr.ravel():
+  for ax in np.ravel(axarr):
     ax.grid("on")
     ax.minorticks_on()
-  B = 0.15*5./Y
-  L = 0.15*9./X
+  B = 0.15*6./Y
+  L = 0.125*9./X
   fig.subplots_adjust(left=L,bottom=B)
   return fig,axarr
   
