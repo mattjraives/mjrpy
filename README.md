@@ -1,6 +1,6 @@
-#Collection of personal python code, tweaks, and constants
+# Collection of personal python code, tweaks, and constants
 
-##Files:
+## Files:
 
 constants.py -- Useful Physical Constants
 
@@ -8,6 +8,6 @@ mplfuncs.py -- Extra Plotting Scripts
 
 mplrc.py -- Matplotlib Settings
 
-##Usage
+## Usage
 
 from mjrpy import *
