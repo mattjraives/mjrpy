@@ -2,7 +2,6 @@ import matplotlib as mpl
 
 mpl.rcParams['lines.linewidth'] = 1.5
 mpl.rcParams['text.usetex'] = True
-mpl.rcParams['text.latex.unicode'] = True
 
 mpl.rcParams['legend.frameon'] = True
 mpl.rcParams['legend.fontsize'] = 24
