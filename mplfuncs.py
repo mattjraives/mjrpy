@@ -44,10 +44,10 @@ def resize(fig, axarr, polar=False, square=False):
     else:
         Y = np.array([6, 11, 15, 18, 20, 21])
         X = 9.0*Y[nc]/6.0
-    if polar:
-        Y = X
-    else:
-        Y = Y[nr]
+        if polar:
+            Y = X
+        else:
+            Y = Y[nr]
         B = 0.15*6./Y
         L = 0.125*9./X
     fig.set_size_inches(X, Y)
