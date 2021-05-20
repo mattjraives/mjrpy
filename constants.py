@@ -1,5 +1,9 @@
 # All Units in cgs
 
+# TIME
+year = 3.154e7 # year in seconds
+day = 86400 # day in seconds
+
 # ASTRONOMICAL
 msun = 1.989e33
 rsun = 6.957e10
